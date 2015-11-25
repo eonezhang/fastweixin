@@ -42,13 +42,6 @@ public class QYNewsMsg extends QYBaseMsg {
         }
         news.put("articles", articles);
     }
-
-    public void setMpArticles(List<QYMpArticle> articles){
-        if(articles.size() > MAX_ARTICLE_COUNT){
-            articles = articles.subList(0, MAX_ARTICLE_COUNT);
-        }
-        news.put("articles", articles);
-    }
 }
 
 
